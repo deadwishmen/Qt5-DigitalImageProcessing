@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1249</width>
+    <height>839</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>541</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>0</y>
+      <width>501</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1249</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Affine">
+    <property name="title">
+     <string>&amp;Affine</string>
+    </property>
+    <addaction name="action_Translation"/>
+    <addaction name="action_Rotation"/>
+    <addaction name="action_Scaling"/>
+    <addaction name="action_Shearing"/>
+   </widget>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="action_Open_3"/>
+   </widget>
+   <widget class="QMenu" name="menu_Operation">
+    <property name="title">
+     <string>&amp;Operation</string>
+    </property>
+    <addaction name="action_Gamma"/>
+    <addaction name="actionHistogram"/>
+   </widget>
+   <widget class="QMenu" name="menuFiltering">
+    <property name="title">
+     <string>&amp;Filtering</string>
+    </property>
+    <addaction name="action_Median"/>
+    <addaction name="action_Gaussian"/>
+    <addaction name="action_Laplacian"/>
+    <addaction name="action_Sobel"/>
+    <addaction name="actionLoG"/>
+    <addaction name="actionCanny"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuThresholding">
+    <property name="title">
+     <string>&amp;Thresholding</string>
+    </property>
+    <addaction name="action_Threshold"/>
+    <addaction name="action_Adaptive_2"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Affine"/>
+   <addaction name="menu_Operation"/>
+   <addaction name="menuFiltering"/>
+   <addaction name="menuThresholding"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <action name="action_Open">
+   <property name="text">
+    <string>&amp;Open</string>
+   </property>
+   <property name="shortcutVisibleInContextMenu">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="action_Open_2">
+   <property name="text">
+    <string>&amp;Open</string>
+   </property>
+  </action>
+  <action name="action_Translation">
+   <property name="text">
+    <string>&amp;Translation</string>
+   </property>
+  </action>
+  <action name="action_Rotation">
+   <property name="text">
+    <string>&amp;Rotation</string>
+   </property>
+  </action>
+  <action name="action_Scaling">
+   <property name="text">
+    <string>&amp;Scaling</string>
+   </property>
+  </action>
+  <action name="action_Shearing">
+   <property name="text">
+    <string>&amp;Shearing</string>
+   </property>
+  </action>
+  <action name="action_Open_3">
+   <property name="text">
+    <string>&amp;Open</string>
+   </property>
+  </action>
+  <action name="action_Gamma">
+   <property name="text">
+    <string>&amp;Gamma</string>
+   </property>
+  </action>
+  <action name="actionHistogram">
+   <property name="text">
+    <string>Histogram</string>
+   </property>
+  </action>
+  <action name="action_Median">
+   <property name="text">
+    <string>&amp;Median</string>
+   </property>
+  </action>
+  <action name="action_Gaussian">
+   <property name="text">
+    <string>&amp;Gaussian</string>
+   </property>
+  </action>
+  <action name="action_Laplacian">
+   <property name="text">
+    <string>&amp;Laplacian</string>
+   </property>
+  </action>
+  <action name="action_Adaptive">
+   <property name="text">
+    <string>&amp;Adaptive</string>
+   </property>
+  </action>
+  <action name="action_Threshold">
+   <property name="text">
+    <string>&amp;Threshold</string>
+   </property>
+  </action>
+  <action name="action_Adaptive_2">
+   <property name="text">
+    <string>&amp;Adaptive</string>
+   </property>
+  </action>
+  <action name="action_Sobel">
+   <property name="text">
+    <string>&amp;Sobel</string>
+   </property>
+  </action>
+  <action name="actionLoG">
+   <property name="text">
+    <string>LoG</string>
+   </property>
+  </action>
+  <action name="actionCanny">
+   <property name="text">
+    <string>Canny</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
